@@ -3,27 +3,35 @@
 
 let price = 500;
 let age = 70;
-const isCar = false;
+const isCar = true;
 
-if (age < 15 && isCar === false) {
+if (age < 15 && !isCar) {
     console.log("you can eat for free");
-    if (age > 60 && isCar === false) {              //problem
-        let discount = price * 50 / 100;
+}
+else if(age < 15 && isCar) {
+    console.log("hey boy pay some money");
+}
+else {
+    if (age > 60 && isCar) {
+        let discount = price * 10 / 100;
         let paybill = price - discount;
         console.log(paybill);
     }
+        else {
+            if (age > 60 && isCar === false) {             
+                let discount = price * 50 / 100;
+                let paybill = price - discount;
+                console.log(paybill);
+        }
+            else {
+                console.log(price);
+        }
+        }    
+    
 }
 
-else if (age > 60 && isCar) {
-    let discount = price * 10 / 100;
-    let paybill = price - discount;
-    console.log(paybill);
-}
-else (
-    console.log(price)
-)
 
-// tarnary:
+
 
 
 

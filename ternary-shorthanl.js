@@ -14,14 +14,25 @@
 
 // video 17.7
 
-// let price = 500;
-// const isLeader = true;
+let price = 500;
+const isLeader = true;
 
-// price = isLeader === false ? 0 : price + 100;
-// console.log(price);
+price = isLeader === false ? 0 : price + 100;
+console.log(price);
 
 
-let money = 1000;
-const isTeamBoy = true;
-money = isTeamBoy === true ? money > 1000 ? money / 2 : 0 : money + 100;
+let money = 2000;
+const isTeamBoy = false;
+
+money = isTeamBoy === true ? money > 1000 ? money / 2 : 0: money;
 console.log(money);
+
+
+
+let fuska = 800;
+const dokandarGorib = false;
+
+ternary:
+fuska = dokandarGorib === true ? fuska + 200 : fuska;
+
+console.log(fuska);
